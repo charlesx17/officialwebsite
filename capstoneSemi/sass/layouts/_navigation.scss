@@ -1,0 +1,38 @@
+.nav {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &_logo img {
+    width: 25rem;
+    margin-left: 3rem;
+  }
+
+  &_list {
+    &-item {
+      list-style: none;
+      display: flex;
+      font-size: 1.6rem;
+      font-family: $font-light;
+      letter-spacing: 0.1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      li {
+        margin-right: 3rem;
+
+        a {
+          text-decoration: none;
+          color: #000000;
+
+          &:hover {
+            color: $primary-color;
+            border-bottom: 0.1rem solid $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
